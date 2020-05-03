@@ -1,0 +1,40 @@
+{
+  "name": "cortana-verifier-middleware",
+  "version": "1.0.0",
+  "description": "An express middleware that verifies HTTP requests sent to a Cortana skill are sent from Microsoft.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tap ./test",
+    "coverage": "tap ./test -- --cov --coverage-report=lcov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tejashah88/cortana-verifier-middleware.git"
+  },
+  "keywords": [
+    "cortana",
+    "cortana-verifier",
+    "cortana-verifier-middleware"
+  ],
+  "author": "tejashah88",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tejashah88/cortana-verifier-middleware/issues"
+  },
+  "homepage": "https://github.com/tejashah88/cortana-verifier-middleware#readme",
+  "dependencies": {
+    "cortana-verifier": "^1.0.0"
+  },
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "coveralls": "^3.1.0",
+    "express": "^4.17.1",
+    "node-mocks-http": "^1.8.1",
+    "sinon": "^9.0.2",
+    "supertest": "^4.0.2",
+    "tap": "^14.10.7"
+  }
+}
